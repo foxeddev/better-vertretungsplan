@@ -1,10 +1,12 @@
-body>img {
-  width: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("images/loading_animation.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
 }
 
 .grid-stack-item:nth-child(1) {
