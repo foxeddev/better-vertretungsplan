@@ -18,7 +18,7 @@
     },
     {
       "matches": [
-        "https://fsg-preetz.org/iserv/custom/858/vertretungsplan"
+        "https://fsg-preetz.org/iserv/*"
       ],
       "css": [
         "page.css"
@@ -36,7 +36,7 @@
     },
     {
       "matches": [
-        "https://fsg-preetz.org/iserv/custom/858/vertretungsplan"
+        "https://fsg-preetz.org/iserv/*"
       ],
       "resources": [
         "images/icon.svg"
