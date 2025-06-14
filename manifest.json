@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Better Vertretungsplan",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://fsg-preetz.org/iserv/public/arrangement/show/3/6caf1a62481ddc33712a459650edfae6"
+      ],
+      "all_frames": true,
+      "run_at": "document_end",
+      "js": [
+        "inner_frame.js"
+      ],
+      "css": [
+        "inner_frame.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://fsg-preetz.org/iserv/custom/858/vertretungsplan"
+      ],
+      "css": [
+        "page.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://fsg-preetz.org/iserv/public/arrangement/show/3/6caf1a62481ddc33712a459650edfae6"
+      ],
+      "resources": [
+        "images/loading_animation.gif"
+      ]
+    },
+    {
+      "matches": [
+        "https://fsg-preetz.org/iserv/custom/858/vertretungsplan"
+      ],
+      "resources": [
+        "images/icon.svg"
+      ]
+    }
+  ]
+}
