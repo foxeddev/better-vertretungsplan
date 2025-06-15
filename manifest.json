@@ -7,6 +7,12 @@
     "48": "images/icon_48.png"
   },
   "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "better-vertretungsplan@foxeddev.github.io"
+    },
+    "gecko_android": {}
+  },
   "content_scripts": [
     {
       "matches": [
