@@ -1,12 +1,21 @@
-html {
-  min-height: 100vh;
-}
-
 body {
   background-image: url("images/loading_animation.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-color: white;
+}
+
+.grid-stack {
+  width: unset !important;
+  height: unset !important;
+  transform: unset !important;
+}
+
+
+.grid-stack-item {
+  width: unset !important;
+  position: unset !important;
 }
 
 .grid-stack-item:nth-child(1) {
@@ -17,16 +26,7 @@ body {
   display: none;
 }
 
-.grid-stack {
-  width: unset !important;
-  height: unset !important;
-  transform: unset !important;
-}
-
-.grid-stack-item {
-  min-height: unset !important;
-  top: unset !important;
-  height: unset !important;
+.grid-stack-item-content-no-error {
   position: unset !important;
 }
 

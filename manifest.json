@@ -19,20 +19,26 @@
         "https://fsg-preetz.org/iserv/public/arrangement/show/3/6caf1a62481ddc33712a459650edfae6"
       ],
       "all_frames": true,
+      "run_at": "document_start",
+      "css": [
+        "frame.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://fsg-preetz.org/iserv/custom/858/vertretungsplan"
+      ],
       "run_at": "document_end",
       "js": [
-        "inner_frame.js"
-      ],
-      "css": [
-        "inner_frame.css"
+        "page.js"
       ]
     },
     {
       "matches": [
         "https://fsg-preetz.org/iserv/*"
       ],
-      "css": [
-        "page.css"
+      "js": [
+        "pages_all.js"
       ]
     }
   ],
