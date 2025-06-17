@@ -7,7 +7,7 @@ document
     if (old_icon) {
       const img = document.createElement("img");
       img.className = "nav-svg-icon";
-      img.src = browser.runtime.getURL("images/icon.svg");
+      img.src = chrome.runtime.getURL("images/icon.svg");
       img.alt = "";
       e.replaceChild(img, old_icon);
     }

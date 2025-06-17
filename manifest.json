@@ -1,12 +1,12 @@
 {
-  "manifest_version": 3,
   "name": "Better Vertretungsplan",
   "description": "",
+  "version": "2.0",
+  "manifest_version": 3,
   "icons": {
     "24": "images/logo_24.png",
     "48": "images/logo_48.png"
   },
-  "version": "2.0",
   "browser_specific_settings": {
     "gecko": {
       "id": "better-vertretungsplan@foxeddev.github.io"
@@ -18,45 +18,58 @@
       "matches": [
         "https://fsg-preetz.org/iserv/public/arrangement/show/3/6caf1a62481ddc33712a459650edfae6"
       ],
+      "exclude_matches": [
+        "*://localhost/*",
+        "*://*.localhost/*"
+      ],
+      "match_about_blank": true,
       "all_frames": true,
-      "run_at": "document_start",
+      "world": "ISOLATED",
       "css": [
         "frame.css"
-      ]
+      ],
+      "run_at": "document_start"
     },
     {
       "matches": [
         "https://fsg-preetz.org/iserv/custom/858/vertretungsplan"
       ],
-      "run_at": "document_end",
+      "exclude_matches": [
+        "*://localhost/*",
+        "*://*.localhost/*"
+      ],
+      "match_about_blank": true,
+      "all_frames": true,
+      "world": "ISOLATED",
       "js": [
         "page.js"
-      ]
+      ],
+      "run_at": "document_end"
     },
     {
       "matches": [
         "https://fsg-preetz.org/iserv/*"
       ],
+      "exclude_matches": [
+        "*://localhost/*",
+        "*://*.localhost/*"
+      ],
+      "match_about_blank": true,
+      "all_frames": true,
+      "world": "ISOLATED",
       "js": [
         "pages_all.js"
-      ]
+      ],
+      "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [
     {
-      "matches": [
-        "https://fsg-preetz.org/iserv/public/arrangement/show/3/6caf1a62481ddc33712a459650edfae6"
-      ],
       "resources": [
-        "images/loading_animation.gif"
-      ]
-    },
-    {
-      "matches": [
-        "https://fsg-preetz.org/iserv/*"
+        "images/*"
       ],
-      "resources": [
-        "images/icon.svg"
+      "matches": [
+        "https://fsg-preetz.org/*"
       ]
     }
   ]
