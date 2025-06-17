@@ -3,8 +3,8 @@
   "name": "Better Vertretungsplan",
   "description": "",
   "icons": {
-    "24": "images/icon_24.png",
-    "48": "images/icon_48.png"
+    "24": "images/logo_24.png",
+    "48": "images/logo_48.png"
   },
   "version": "2.0",
   "browser_specific_settings": {
