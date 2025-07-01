@@ -48,6 +48,25 @@
     },
     {
       "matches": [
+        "https://fsg-preetz.org/iserv/auth/*"
+      ],
+      "exclude_matches": [
+        "*://localhost/*",
+        "*://*.localhost/*"
+      ],
+      "match_about_blank": true,
+      "all_frames": true,
+      "world": "ISOLATED",
+      "css": [
+        "auth.css"
+      ],
+      "js": [
+        "auth.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
         "https://fsg-preetz.org/iserv/*"
       ],
       "exclude_matches": [

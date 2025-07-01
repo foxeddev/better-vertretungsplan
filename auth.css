@@ -1,0 +1,13 @@
+header {
+  background-image: url("https://fsg-preetz.de/wp-content/uploads/2023/10/slide-fsg01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#school-logo {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 50 0 10px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
