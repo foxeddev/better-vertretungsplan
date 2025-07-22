@@ -1,7 +1,7 @@
 {
   "name": "Better Vertretungsplan",
   "description": "",
-  "version": "2.1",
+  "version": "2.2",
   "manifest_version": 3,
   "icons": {
     "24": "images/logo_24.png",
